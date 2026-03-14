@@ -17,6 +17,7 @@
 
     <properties>
         <java.version>25</java.version>
+        <jackson-bom.version>3.1.0</jackson-bom.version>
     </properties>
 
     <dependencies>
