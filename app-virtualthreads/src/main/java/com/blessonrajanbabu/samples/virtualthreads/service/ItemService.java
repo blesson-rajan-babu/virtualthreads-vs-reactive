@@ -12,14 +12,14 @@ public class ItemService {
 
     private final Duration responseDelay;
 
-    public Item createItem(Item item) {
-        delay(responseDelay);
-        return item;
-    }
-
     @SneakyThrows
     private static void delay(Duration duration) {
         TimeUnit.MILLISECONDS.sleep(duration.toMillis());
+    }
+
+    public Item createItem(Item item) {
+        delay(responseDelay);
+        return item;
     }
 
 }
